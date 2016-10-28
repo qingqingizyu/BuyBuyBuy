@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="超值热卖"
+            android:textSize="20sp"
+            android:textColor="#7c7c7c"
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_hot_title"/>
+
+        <ImageView
+            android:id="@+id/ivb_hot"
+            android:layout_margin="4dp"
+            android:layout_width="40dp"
+            android:onClick="search"
+            android:layout_height="40dp"
+            android:src="@drawable/tab_title_search"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderBackground="@null"
+        ptr:ptrHeaderSubTextColor="#1a1a1a"
+        ptr:ptrHeaderTextColor="#000"
+        ptr:ptrMode="both" />
+
+</LinearLayout>
+    <CheckBox
+        android:id="@+id/btn_layout"
+        android:layout_margin="5dp"
+        android:button="@null"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_layout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+</RelativeLayout>

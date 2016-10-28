@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.buybuybuy.ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_sy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bt_home"
+            style="@style/ButtonDown"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_home"
+            android:text="@string/home" />
+
+        <RadioButton
+            android:id="@+id/bt_hot"
+            style="@style/ButtonDown"
+            android:drawableTop="@drawable/btn_hot"
+            android:text="@string/hot" />
+
+        <RadioButton
+            android:id="@+id/bt_sort"
+            style="@style/ButtonDown"
+            android:drawableTop="@drawable/btn_sort"
+            android:text="@string/sort" />
+
+        <RadioButton
+            android:id="@+id/bt_sales"
+            style="@style/ButtonDown"
+            android:drawableTop="@drawable/btn_sales"
+            android:text="@string/sales" />
+
+        <RadioButton
+            android:id="@+id/bt_person"
+            style="@style/ButtonDown"
+            android:drawableTop="@drawable/btn_me"
+            android:text="@string/person" />
+    </RadioGroup>
+</LinearLayout>

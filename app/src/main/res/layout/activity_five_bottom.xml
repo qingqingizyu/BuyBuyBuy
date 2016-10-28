@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:background="#fbfbfb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buybuybuy.ui.person.activity.FiveBottomActivity">
+
+    <LinearLayout
+        android:background="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="#fd3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+        <LinearLayout
+            android:id="@+id/ll_bottom_a"
+            style="@style/ll_style1">
+            <LinearLayout
+                style="@style/ll_style2">
+                <TextView
+                    android:text="为我点赞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_style3">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/five_image_head_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:id="@+id/ll_bottom_b"
+            style="@style/ll_style1">
+            <LinearLayout
+                style="@style/ll_style2">
+                <TextView
+                    android:text="清理缓存"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_style3">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/five_image_head_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:id="@+id/ll_bottom_c"
+            style="@style/ll_style1">
+            <LinearLayout
+                style="@style/ll_style2">
+                <TextView
+                    android:text="检查更新"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_style3">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/five_image_head_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:id="@+id/ll_bottom_d"
+            style="@style/ll_style1">
+            <LinearLayout
+                style="@style/ll_style2">
+                <TextView
+                    android:text="是否接受提醒"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_style3">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/five_image_head_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:id="@+id/ll_bottom_e"
+            style="@style/ll_style1">
+            <LinearLayout
+                style="@style/ll_style2">
+                <TextView
+                    android:text="推荐应用给好友"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_style3">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/five_image_head_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:id="@+id/ll_bottom_f"
+            style="@style/ll_style1">
+            <LinearLayout
+                style="@style/ll_style2">
+                <TextView
+                    android:text="意见反馈"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_style3">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/five_image_head_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

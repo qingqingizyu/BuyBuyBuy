@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--TODO:第一部分，最顶部的背景图片和logo-->
+        <RelativeLayout
+            android:background="#fff"
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/five_image_head_background"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/five_image_head_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/bt_login"
+                        android:text="登录"
+                        android:textColor="#fff"
+                        android:background="#FB6893"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:id="@+id/bt_register"
+                        android:text="注册"
+                        android:textColor="#fff"
+                        android:background="#FB6893"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--TODO:第二部分-->
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:background="#fff"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/five_image_head_a1"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="我的订单"
+                android:textColor="#aaa"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="查看全部订单"
+                android:drawableRight="@mipmap/five_image_head_a2"
+                android:textColor="#FA5584"
+                android:layout_marginLeft="150dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <!--TODO:第三部分-->
+        <LinearLayout
+            android:background="#fff"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rb_pay"
+                    android:text="待付款"
+                    style="@style/rb_style1"
+                    android:drawableTop="@mipmap/five_image_head_b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_delivery"
+                    android:text="待发货"
+                    style="@style/rb_style1"
+                    android:drawableTop="@mipmap/five_image_head_b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_goods"
+                    android:text="待收货"
+                    style="@style/rb_style1"
+                    android:drawableTop="@mipmap/five_image_head_b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_evaluation"
+                    android:text="待评价"
+                    style="@style/rb_style1"
+                    android:drawableTop="@mipmap/five_image_head_b4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--TODO:第四部分-->
+        <GridView
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:columnWidth="70dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="10dp"/>
+        <!--android:numColumns="auto_fit" ，GridView的列数设置为自动
+        android:columnWidth="90dp"，每列的宽度，也就是Item的宽度
+        android:stretchMode="columnWidth"，缩放与列宽大小同步
+        android:verticalSpacing="10dp"，两行之间的边距
+        android:horizontalSpacing="10dp"，两列之间的边距。-->
+
+        <!--TODO:第五部分设置栏-->
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:background="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="设置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="(当前版本v2.3.17)"
+                android:drawableRight="@mipmap/five_image_head_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

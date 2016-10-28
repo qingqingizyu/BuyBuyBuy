@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buybuybuy.ui.hot.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:background="#dad2d2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_back_icon" />
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="35dp"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/ed_search"
+                android:hint="毛绒玩具"
+                android:textColorHint="#e6e3e3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_margin="6dp"
+            android:layout_weight="2"
+            android:background="#fff"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
