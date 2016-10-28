@@ -1,4 +1,4 @@
-# YiYuanTianTianGou（买买买）
+# BuyBuyBuy（买买买）
 ###项目名称：	
 买买买（已上线）
 ###开发环境：	
